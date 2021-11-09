@@ -8,3 +8,5 @@ RUN ./aws/install
 
 RUN curl -s 'https://raw.githubusercontent.com/kubernetes-sigs/kustomize/kustomize/v4.4.0/hack/install_kustomize.sh' | bash
 RUN ln -s /opt/kustomize /usr/local/bin/kustomize
+
+RUN usermod -a -G docker jenkins
